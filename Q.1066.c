@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main(){
+
+int n,eve=0,odd=0,pos=0,neg=0;
+
+for(int i = 0;i<5;i++){
+    scanf("%d",&n);
+    if(n%2==0){
+        eve++;
+    }
+    else {
+        odd++;
+    }
+    if(n>0){
+        pos++;
+    }
+    else if(n<0){
+        neg++;
+    }
+}
+printf("%d valor(es) par(es)\n",eve);
+printf("%d valor(es) impar(es)\n",odd);
+printf("%d valor(es) positivo(s)\n",pos);
+printf("%d valor(es) negativo(s)\n",neg);
+}
